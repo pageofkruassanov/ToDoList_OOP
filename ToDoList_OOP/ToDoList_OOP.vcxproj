@@ -127,7 +127,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ToDoList_OOP.cpp" />
+    <ClCompile Include="CreateHighPriorityTask.cpp" />
+    <ClCompile Include="CreateLowPriorityTask.cpp" />
+    <ClCompile Include="CreateMiddlePriorityTask.cpp" />
+    <ClCompile Include="HighPriority.cpp" />
+    <ClCompile Include="LowPriority.cpp" />
+    <ClCompile Include="MiddlePriority.cpp" />
+    <ClCompile Include="Task.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CreateByPriorityTask.h" />
+    <ClInclude Include="CreateHighPriorityTask.h" />
+    <ClInclude Include="CreateLowPriorityTask.h" />
+    <ClInclude Include="CreateMiddlePriorityTask.h" />
+    <ClInclude Include="HighPriority.h" />
+    <ClInclude Include="IPriority.h" />
+    <ClInclude Include="ISaveBinary.h" />
+    <ClInclude Include="ITask.h" />
+    <ClInclude Include="LowPriority.h" />
+    <ClInclude Include="MiddlePriority.h" />
+    <ClInclude Include="Task.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

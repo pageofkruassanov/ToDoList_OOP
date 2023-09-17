@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ITask" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAUAAAAAgAAIAAAAAAAAAAAAAAABGAAAEAAAAAAA=</HashCode>
+      <FileName>ITask.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IPriority" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPriority.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LowPriority" Collapsed="true">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAQAAAAAAAAAAAAAAABAAAQAAgAAAAAAAAA=</HashCode>
+      <FileName>LowPriority.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MiddlePriority" Collapsed="true">
+    <Position X="5.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAABQAAAAAAAAAAAAAAABAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>MiddlePriority.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HighPriority" Collapsed="true">
+    <Position X="0.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAQAAAAAAAEAAAAAAABAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>HighPriority.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Task" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAWAAAAQgAAIAAAAAAIAAAAAEAABGAEAEAQAAAAA=</HashCode>
+      <FileName>Task.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreateLowPriorityTask" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CreateLowPriorityTask.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreateMiddlePriorityTask" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CreateMiddlePriorityTask.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreateHighPriorityTask" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CreateHighPriorityTask.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CreateByPriorityTask" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CreateByPriorityTask.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
