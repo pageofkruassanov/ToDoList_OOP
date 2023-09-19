@@ -1,5 +1,7 @@
 #pragma once
 #include "IPriority.h"
+
+// Singltone:
 class MiddlePriority : public IPriority
 {
 	static MiddlePriority* instance;
@@ -8,5 +10,6 @@ class MiddlePriority : public IPriority
 public:
 	int getPriority() override;
 	static MiddlePriority* getInstance();
+	~MiddlePriority() override;
 };
 

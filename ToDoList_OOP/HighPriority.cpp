@@ -18,3 +18,9 @@ int HighPriority::getPriority()
 {
     return priority;
 }
+
+HighPriority::~HighPriority()
+{
+    if (instance != nullptr)
+        delete instance;
+}

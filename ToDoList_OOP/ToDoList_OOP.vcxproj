@@ -135,6 +135,7 @@
     <ClCompile Include="MiddlePriority.cpp" />
     <ClCompile Include="Task.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ToDoListApplication.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CreateByPriorityTask.h" />
@@ -142,12 +143,14 @@
     <ClInclude Include="CreateLowPriorityTask.h" />
     <ClInclude Include="CreateMiddlePriorityTask.h" />
     <ClInclude Include="HighPriority.h" />
+    <ClInclude Include="ILoadBinary.h" />
     <ClInclude Include="IPriority.h" />
     <ClInclude Include="ISaveBinary.h" />
     <ClInclude Include="ITask.h" />
     <ClInclude Include="LowPriority.h" />
     <ClInclude Include="MiddlePriority.h" />
     <ClInclude Include="Task.h" />
+    <ClInclude Include="ToDoListApplication.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />

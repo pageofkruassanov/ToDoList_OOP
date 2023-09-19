@@ -18,3 +18,9 @@ MiddlePriority* MiddlePriority::getInstance()
         instance = new MiddlePriority;
     return instance;
 }
+
+MiddlePriority::~MiddlePriority()
+{
+    if (instance != nullptr)
+        delete instance;
+}

@@ -39,6 +39,9 @@
     <ClCompile Include="CreateHighPriorityTask.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ToDoListApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ITask.h">
@@ -72,6 +75,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ISaveBinary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ILoadBinary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ToDoListApplication.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

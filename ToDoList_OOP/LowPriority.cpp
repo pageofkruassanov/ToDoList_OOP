@@ -19,3 +19,9 @@ LowPriority* LowPriority::getInstance()
         instance = new LowPriority;
     return instance;
 }
+
+LowPriority::~LowPriority()
+{
+    if (instance != nullptr)
+        delete instance;
+}

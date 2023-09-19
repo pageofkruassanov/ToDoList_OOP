@@ -3,71 +3,100 @@
   <Class Name="ITask" Collapsed="true">
     <Position X="0.5" Y="6.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAAAAUAAAAAgAAIAAAAAAAAAAAAAAABGAAAEAAAAAAA=</HashCode>
+      <HashCode>EAAAAUAAAAAgAAIAAAgAAAAAAAAAAABGAAAEAAAAAAA=</HashCode>
       <FileName>ITask.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="IPriority" Collapsed="true">
-    <Position X="3" Y="3.5" Width="1.5" />
+    <Position X="2.75" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IPriority.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LowPriority" Collapsed="true">
-    <Position X="3" Y="4.75" Width="1.5" />
+    <Position X="2.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAEAAAAQAAAAAAAAAAAAAAABAAAQAAgAAAAAAAAA=</HashCode>
+      <HashCode>AABAAEAAAAQAAAAAAAAAAAAAAABAAAQAAgAAAAAAAAA=</HashCode>
       <FileName>LowPriority.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MiddlePriority" Collapsed="true">
-    <Position X="5.25" Y="4.75" Width="1.5" />
+    <Position X="5.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAEAAABQAAAAAAAAAAAAAAABAAAQAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAEgAABQAAAAAAAAAAAAAAABAAAQAAAAAAAAAAAA=</HashCode>
       <FileName>MiddlePriority.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="HighPriority" Collapsed="true">
-    <Position X="0.75" Y="4.75" Width="1.5" />
+    <Position X="0.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAEAAAAQAAAAAAAEAAAAAAABAAAQAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAEQAAAQAAAAAAAEAAAAAAABAAAQAAAAAAAAAAAA=</HashCode>
       <FileName>HighPriority.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Task" Collapsed="true">
-    <Position X="0.5" Y="7.75" Width="1.5" />
+    <Position X="2.75" Y="8.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAQAAWAAAAQgAAIAAAAAAIAAAAAEAABGAEAEAQAAAAA=</HashCode>
+      <HashCode>kAAAAWAAAAQgAAIAIAQAAAAAAAAEAABGAEAEAQAAAAA=</HashCode>
       <FileName>Task.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CreateLowPriorityTask" Collapsed="true">
-    <Position X="3" Y="1.75" Width="1.5" />
+    <Position X="11.25" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CreateLowPriorityTask.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CreateMiddlePriorityTask" Collapsed="true">
-    <Position X="5.25" Y="1.75" Width="1.5" />
+    <Position X="13.75" Y="3" Width="1.5" />
+    <InheritanceLine Type="CreateByPriorityTask" ManuallyRouted="true">
+      <Path>
+        <Point X="12" Y="1.312" />
+        <Point X="12" Y="2.625" />
+        <Point X="14.5" Y="2.625" />
+        <Point X="14.5" Y="3" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CreateMiddlePriorityTask.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CreateHighPriorityTask" Collapsed="true">
-    <Position X="0.75" Y="1.75" Width="1.5" />
+    <Position X="8.75" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CreateHighPriorityTask.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CreateByPriorityTask" Collapsed="true">
-    <Position X="3" Y="0.5" Width="1.5" />
+    <Position X="11.25" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CreateByPriorityTask.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ISaveBinary" Collapsed="true">
+    <Position X="2.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ISaveBinary.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ILoadBinary" Collapsed="true">
+    <Position X="5.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>ILoadBinary.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ToDoListApplication" Collapsed="true">
+    <Position X="11.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAABAAAA=</HashCode>
+      <FileName>ToDoListApplication.h</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

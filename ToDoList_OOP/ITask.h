@@ -14,4 +14,5 @@ public:
 	virtual std::string getDescription(std::string description) = 0;
 	virtual IPriority* getPriority() = 0;
 	virtual tm* getDate() = 0;
+	virtual ~ITask() = default;
 };

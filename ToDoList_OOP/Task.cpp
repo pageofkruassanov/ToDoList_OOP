@@ -1,5 +1,14 @@
 #include "Task.h"
 
+Task::Task()
+{
+	name = " ";
+	description = " ";
+	tag = " ";
+	priority = nullptr;
+	date = nullptr;
+}
+
 void Task::setName(std::string name)
 {
 	this->name = name;
@@ -7,7 +16,7 @@ void Task::setName(std::string name)
 
 void Task::setDescription(std::string description)
 {
-	this->descprition = description;
+	this->description = description;
 }
 
 void Task::setPriority(IPriority* priority)
@@ -45,7 +54,85 @@ tm* Task::getDate()
 	return date;
 }
 
-void Task::saveBinary()
+void Task::saveToBinary(std::ofstream outputData)
 {
-	cout << "Save binary";
+	if (date == nullptr || priority == nullptr)
+		throw exception("Error/ saveToBinary / Uninitialized variables");
+	if (outputData.is_open()) {
+		int tempSize = name.size();
+		// save for name:
+		outputData.write(reinterpret_cast<char*>(&tempSize), sizeof(tempSize));
+		outputData.write(name.c_str(), tempSize);
+		// save for description:
+		tempSize = description.size();
+		outputData.write(reinterpret_cast<char*>(&tempSize), sizeof(tempSize));
+		outputData.write(description.c_str(), tempSize);
+		// save for IPriority:
+		int tempPriority = priority->getPriority();
+		outputData.write(reinterpret_cast<char*>(&tempPriority), sizeof(tempPriority));
+		// save for date:
+		outputData.write(reinterpret_cast<char*>(*( & date)), sizeof(*date));
+		// save for tag:
+		tempSize = tag.size();
+		outputData.write(reinterpret_cast<char*>(&tempSize), sizeof(tempSize));
+		outputData.write(tag.c_str(), tempSize);
+	}
+	else {
+		throw exception("Error/ saveToBinary");
+	}
 }
+
+void Task::loadFromBinary(std::ifstream inputData)
+{
+	if (inputData.is_open()) {
+		int tempSize;
+		char* buffer;
+		// load for name:
+		inputData.read(reinterpret_cast<char*>(&tempSize), sizeof(tempSize));
+		buffer = new char[tempSize + 1];
+		inputData.read(buffer, tempSize);
+		buffer[tempSize] = '\0';
+		name = buffer;
+		delete[] buffer;
+		// load for description:
+		inputData.read(reinterpret_cast<char*>(&tempSize), sizeof(tempSize));
+		buffer = new char[tempSize + 1];
+		inputData.read(buffer, tempSize);
+		buffer[tempSize] = '\0';
+		description = buffer;
+		delete[] buffer;
+		// load for IPriority:
+		int tempPriority;
+		inputData.read(reinterpret_cast<char*>(&tempPriority), sizeof(tempPriority));
+		if (tempPriority == 1)
+			priority = HighPriority::getInstance();
+		else if (tempPriority == 2)
+			priority = MiddlePriority::getInstance();
+		else
+			priority = LowPriority::getInstance();
+		// load for date:
+		if (date != nullptr)
+			delete date;
+		inputData.read(reinterpret_cast<char*>(*(&date)), sizeof(*date));
+		// load for tag:
+		inputData.read(reinterpret_cast<char*>(&tempSize), sizeof(tempSize));
+		buffer = new char[tempSize + 1];
+		inputData.read(buffer, tempSize);
+		buffer[tempSize] = '\0';
+		tag = buffer;
+		delete[] buffer;
+	}
+	else {
+		throw exception("Error/ loadFromBinary");
+	}
+
+}
+
+Task::~Task()
+{
+	if (priority != nullptr)
+		delete priority;
+	if (date != nullptr)
+		delete date;
+}
+
