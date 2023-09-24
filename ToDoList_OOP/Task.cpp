@@ -130,8 +130,6 @@ void Task::loadFromBinary(std::ifstream inputData)
 
 Task::~Task()
 {
-	if (priority != nullptr)
-		delete priority;
 	if (date != nullptr)
 		delete date;
 }
