@@ -4,7 +4,8 @@ HighPriority* HighPriority::instance = nullptr;
 
 HighPriority::HighPriority()
 {
-    priority = 1;
+    priorityInt = 1;
+    priorityStr = "Высокий приоритет";
 }
 
 HighPriority* HighPriority::getInstance()
@@ -14,13 +15,14 @@ HighPriority* HighPriority::getInstance()
     return instance;
 }
 
-int HighPriority::getPriority()
+std::string HighPriority::getPriorityStr()
 {
-    return priority;
+    return priorityStr;
 }
 
-HighPriority::~HighPriority()
+int HighPriority::getPriorityInt()
 {
-    if (instance != nullptr)
-        delete instance;
+    return priorityInt;
 }
+
+

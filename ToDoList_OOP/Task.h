@@ -6,6 +6,7 @@
 #include "HighPriority.h"
 #include "LowPriority.h"
 #include "MiddlePriority.h"
+#include "ISearch.h"
 
 using namespace std;
 class Task : public ITask, public ISaveBinary, public ILoadBinary
@@ -25,11 +26,12 @@ public:
 	void setDate(tm* date);
 	void setTag(std::string tag);
 	std::string getName();
-	std::string getDescription(std::string description);
+	std::string getDescription();
 	IPriority* getPriority();
 	tm* getDate();
-	void saveToBinary(std::ofstream outputData) override;
-	void loadFromBinary(std::ifstream inputData) override;
-	~Task() override;
+	std::string getTag();
+	void saveToBinary(std::ofstream& outputData);
+	void loadFromBinary(std::ifstream& inputData);
+	~Task();
 };
 

@@ -5,12 +5,18 @@ LowPriority* LowPriority::instance = nullptr;
 
 LowPriority::LowPriority()
 {
-    priority = 3;
+    priorityInt = 3;
+    priorityStr = "Низкий приоритет";
 }
 
-int LowPriority::getPriority()
+int LowPriority::getPriorityInt()
 {
-    return priority;
+    return priorityInt;
+}
+
+std::string LowPriority::getPriorityStr()
+{
+    return priorityStr;
 }
 
 LowPriority* LowPriority::getInstance()
@@ -20,8 +26,4 @@ LowPriority* LowPriority::getInstance()
     return instance;
 }
 
-LowPriority::~LowPriority()
-{
-    if (instance != nullptr)
-        delete instance;
-}
+

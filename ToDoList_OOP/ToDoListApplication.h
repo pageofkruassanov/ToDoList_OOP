@@ -1,10 +1,11 @@
 #pragma once
 #include "Task.h"
+#include "TaskManager.h"
 
 // Facade:
 class ToDoListApplication
 {
-	Task* task;
+	TaskManager tasks;
 	// place for menu class;
 
 public:

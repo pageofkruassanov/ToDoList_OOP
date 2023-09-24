@@ -5,12 +5,12 @@
 class LowPriority : public IPriority
 {
 	static LowPriority* instance;
-	int priority;
+	int priorityInt;
+	std::string priorityStr;
 	LowPriority();
 public:
-	int getPriority() override;
+	int getPriorityInt() override;
+	std::string getPriorityStr() override;
 	static LowPriority* getInstance();
-	~LowPriority() override;
-
 };
 

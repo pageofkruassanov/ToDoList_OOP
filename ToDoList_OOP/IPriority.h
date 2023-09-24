@@ -3,6 +3,6 @@
 
 class IPriority abstract{
 public:
-	virtual int getPriority() = 0;
-	virtual ~IPriority() = default;
+	virtual int getPriorityInt() = 0;
+	virtual std::string getPriorityStr() = 0;
 };

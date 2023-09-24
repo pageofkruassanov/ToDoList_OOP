@@ -3,35 +3,35 @@
   <Class Name="ITask" Collapsed="true">
     <Position X="0.5" Y="6.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAAAAUAAAAAgAAIAAAgAAAAAAAAAAABGAAAEAAAAAAA=</HashCode>
+      <HashCode>EAAAAWAAAAAgAAIAAAgAAAAAAAAAAABGAAAEAAAAAAA=</HashCode>
       <FileName>ITask.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="IPriority" Collapsed="true">
     <Position X="2.75" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAEAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAABAAAAAAAAAAAAA=</HashCode>
       <FileName>IPriority.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LowPriority" Collapsed="true">
     <Position X="2.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AABAAEAAAAQAAAAAAAAAAAAAAABAAAQAAgAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAFAABQAAgAAAAAAAAE=</HashCode>
       <FileName>LowPriority.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MiddlePriority" Collapsed="true">
     <Position X="5.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAEgAABQAAAAAAAAAAAAAAABAAAQAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAEAAAFAABQAAAAAAAAAAAE=</HashCode>
       <FileName>MiddlePriority.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="HighPriority" Collapsed="true">
     <Position X="0.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAEQAAAQAAAAAAAEAAAAAAABAAAQAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAEAAAFAABQAAAAAAAAAAAE=</HashCode>
       <FileName>HighPriority.h</FileName>
     </TypeIdentifier>
   </Class>
@@ -95,8 +95,22 @@
   <Class Name="ToDoListApplication" Collapsed="true">
     <Position X="11.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAABAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAgAAAAAAAAAAAA=</HashCode>
       <FileName>ToDoListApplication.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ISearch" Collapsed="true">
+    <Position X="10.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAIA=</HashCode>
+      <FileName>ISearch.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaskManager" Collapsed="true">
+    <Position X="10.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIACAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAIQAAAIA=</HashCode>
+      <FileName>TaskManager.h</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

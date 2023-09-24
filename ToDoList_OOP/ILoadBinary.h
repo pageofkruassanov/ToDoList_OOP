@@ -5,5 +5,5 @@
 class ILoadBinary abstract
 {
 public:
-	virtual void loadFromBinary(std::ifstream inputData) = 0;
+	virtual void loadFromBinary(std::ifstream& inputData) = 0;
 };

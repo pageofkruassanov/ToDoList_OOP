@@ -11,8 +11,9 @@ public:
 	virtual void setDate(tm* date) = 0;
 	virtual void setTag(std::string tag) = 0;
 	virtual std::string getName() = 0;
-	virtual std::string getDescription(std::string description) = 0;
+	virtual std::string getDescription() = 0;
 	virtual IPriority* getPriority() = 0;
 	virtual tm* getDate() = 0;
-	virtual ~ITask() = default;
+	virtual std::string getTag() = 0;
+	virtual ~ITask() = 0;
 };

@@ -39,7 +39,7 @@ std::string Task::getName()
 	return name;
 }
 
-std::string Task::getDescription(std::string description)
+std::string Task::getDescription()
 {
 	return description;
 }
@@ -54,7 +54,12 @@ tm* Task::getDate()
 	return date;
 }
 
-void Task::saveToBinary(std::ofstream outputData)
+std::string Task::getTag()
+{
+	return tag;
+}
+
+void Task::saveToBinary(std::ofstream& outputData)
 {
 	if (date == nullptr || priority == nullptr)
 		throw exception("Error/ saveToBinary / Uninitialized variables");
@@ -68,10 +73,12 @@ void Task::saveToBinary(std::ofstream outputData)
 		outputData.write(reinterpret_cast<char*>(&tempSize), sizeof(tempSize));
 		outputData.write(description.c_str(), tempSize);
 		// save for IPriority:
-		int tempPriority = priority->getPriority();
+		int tempPriority = priority->getPriorityInt();
 		outputData.write(reinterpret_cast<char*>(&tempPriority), sizeof(tempPriority));
 		// save for date:
-		outputData.write(reinterpret_cast<char*>(*( & date)), sizeof(*date));
+		outputData.write(reinterpret_cast<char*>(&date->tm_year), sizeof(date->tm_year));
+		outputData.write(reinterpret_cast<char*>(&date->tm_mon), sizeof(date->tm_mon));
+		outputData.write(reinterpret_cast<char*>(&date->tm_mday), sizeof(date->tm_mday));
 		// save for tag:
 		tempSize = tag.size();
 		outputData.write(reinterpret_cast<char*>(&tempSize), sizeof(tempSize));
@@ -82,7 +89,7 @@ void Task::saveToBinary(std::ofstream outputData)
 	}
 }
 
-void Task::loadFromBinary(std::ifstream inputData)
+void Task::loadFromBinary(std::ifstream& inputData)
 {
 	if (inputData.is_open()) {
 		int tempSize;
@@ -113,7 +120,10 @@ void Task::loadFromBinary(std::ifstream inputData)
 		// load for date:
 		if (date != nullptr)
 			delete date;
-		inputData.read(reinterpret_cast<char*>(*(&date)), sizeof(*date));
+		date = new tm;
+		inputData.read(reinterpret_cast<char*>(&date->tm_year), sizeof(date->tm_year));
+		inputData.read(reinterpret_cast<char*>(&date->tm_mon), sizeof(date->tm_mon));
+		inputData.read(reinterpret_cast<char*>(&date->tm_mday), sizeof(date->tm_mday));
 		// load for tag:
 		inputData.read(reinterpret_cast<char*>(&tempSize), sizeof(tempSize));
 		buffer = new char[tempSize + 1];

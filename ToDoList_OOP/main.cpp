@@ -11,6 +11,7 @@ using namespace std;
 
 int main()
 {
+    setlocale(0, "Rus");
     /*map<string, int> priority;
     priority["сок"] = 0;
     priority["высокий"] = 1;
@@ -65,7 +66,8 @@ int main()
     //inputFile.read(reinterpret_cast<char*>(&temp2), sizeof(temp2));
     //inputFile.read(reinterpret_cast<char*>(&temp3), sizeof(temp3));
     //cout << endl << temp1 << " " << temp2 << " " << temp3;
-    tm* date = new tm;
+
+    /*tm* date = new tm;
     date->tm_year = 2000;
     date->tm_mon = 12;
     ofstream of("binary_string.bin", std::ios::binary);
@@ -74,5 +76,35 @@ int main()
     ifstream ist("binary_string.bin", std::ios::binary);
     tm* tempDate = new tm;
     ist.read(reinterpret_cast<char*>(*(&tempDate)), sizeof(*tempDate));
-    cout << tempDate->tm_year << " " << tempDate->tm_mon;
+    cout << tempDate->tm_year << " " << tempDate->tm_mon;*/
+
+    /*Task task;
+    task.setName("RandomName");
+    task.setDescription("RandomDescription");
+    task.setTag("RandomTag");
+    tm* date = new tm;
+    date->tm_year = 2000;
+    date->tm_mon = 12;
+    date->tm_mday = 15;
+    task.setDate(date);
+    task.setPriority(HighPriority::getInstance());
+    ofstream ostr("myFile.bin", std::ios::binary);
+    
+    task.saveToBinary(ostr);
+    ostr.close();
+
+    Task task2;
+    ifstream istr("myFile.bin", std::ios::binary);
+    task2.loadFromBinary(istr);
+    cout << task2.getDate()->tm_year << " " << task2.getDate()->tm_mon << " " << task2.getDate()->tm_mday;
+    cout << endl << task2.getDescription() << endl;
+    cout << task2.getName() << endl;
+    cout << task2.getPriority()->getPriorityStr() << endl;*/
+    string str1 = "Hello";
+    string str2 = "hello";
+    if (str1 == str2)
+        cout << "True";
+    else {
+        cout << "False";
+    }
 }

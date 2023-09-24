@@ -4,12 +4,18 @@ MiddlePriority* MiddlePriority::instance = nullptr;
 
 MiddlePriority::MiddlePriority()
 {
-    priority = 2;
+    priorityInt = 2;
+    priorityStr = "Средний приоритет";
 }
 
-int MiddlePriority::getPriority()
+int MiddlePriority::getPriorityInt()
 {
-    return priority;
+    return priorityInt;
+}
+
+std::string MiddlePriority::getPriorityStr()
+{
+    return priorityStr;
 }
 
 MiddlePriority* MiddlePriority::getInstance()
@@ -19,8 +25,4 @@ MiddlePriority* MiddlePriority::getInstance()
     return instance;
 }
 
-MiddlePriority::~MiddlePriority()
-{
-    if (instance != nullptr)
-        delete instance;
-}
+

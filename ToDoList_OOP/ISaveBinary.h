@@ -4,6 +4,6 @@
 class ISaveBinary
 {
 public:
-	virtual void saveToBinary(std::ofstream outputData) = 0;
+	virtual void saveToBinary(std::ofstream& outputData) = 0;
 };
 
