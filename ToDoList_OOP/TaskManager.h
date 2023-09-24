@@ -12,5 +12,6 @@ public:
 	ITask* SearchByDate(tm* date);
 	ITask* SearchByTag(std::string tag);
 	ITask* SearchByPriority(IPriority* priority);
+	std::vector<ITask*>& getTasks();
 };
 

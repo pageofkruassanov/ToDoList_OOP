@@ -1,4 +1,4 @@
-// started (not completed)
+// started (just menu)
 #include <iostream>
 #include <map>
 #include "IPriority.h"

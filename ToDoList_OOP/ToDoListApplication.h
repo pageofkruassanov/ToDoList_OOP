@@ -1,15 +1,16 @@
 #pragma once
 #include "Task.h"
 #include "TaskManager.h"
+#include "SaveLoadControlSystem.h"
+#include "Menu.h"
 
-// Facade:
+// Facade: (just menu)
 class ToDoListApplication
 {
 	TaskManager tasks;
-	// place for menu class;
-
+	SaveLoadControlSystem sl_cs;
+	/*Menu menu;*/
 public:
-
-	~ToDoListApplication();
+	void Start();
 };
 

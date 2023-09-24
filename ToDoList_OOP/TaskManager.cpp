@@ -40,3 +40,8 @@ ITask* TaskManager::SearchByPriority(IPriority* priority)
 			return tasks[i];
 	}
 }
+
+std::vector<ITask*>& TaskManager::getTasks()
+{
+	return tasks;
+}

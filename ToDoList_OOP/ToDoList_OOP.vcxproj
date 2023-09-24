@@ -135,6 +135,7 @@
     <ClCompile Include="ISearch.cpp" />
     <ClCompile Include="ITask.cpp" />
     <ClCompile Include="LowPriority.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="MiddlePriority.cpp" />
     <ClCompile Include="Task.cpp" />
     <ClCompile Include="main.cpp" />
@@ -153,7 +154,9 @@
     <ClInclude Include="ISearch.h" />
     <ClInclude Include="ITask.h" />
     <ClInclude Include="LowPriority.h" />
+    <ClInclude Include="Menu.h" />
     <ClInclude Include="MiddlePriority.h" />
+    <ClInclude Include="SaveLoadControlSystem.h" />
     <ClInclude Include="Task.h" />
     <ClInclude Include="TaskManager.h" />
     <ClInclude Include="ToDoListApplication.h" />
